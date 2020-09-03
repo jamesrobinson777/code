@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Code World</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo" href="#home">
+              <img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo" />
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link active" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#languages">Languages</a></li>
+			<li><a class="nav-link" href="#help">Help</a></li>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3>Code World<hr></h3>
+		  <p><a href="https://www.codecademy.com/register?redirect=https%3A%2F%2Fwww.codecademy.com%2Flogin" target="_blank">Learn To code</a></p>
+		  <p><a href="https://repl.it/signup"target="_blank">Code Your World</a></p>
+          <p><a href="https://app.netlify.com/sites/website54/settings/general"target="_blank">Post Yor World</a></p>
+			  
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+			  <a href="" target="_blank"><i class='fab fa-codepen'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+			  <a href="https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>Code Languages.<hr></h3>
+		  <p>Here are some code languages you may like.</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+			    <a href="https://repl.it/@CodeWorld/Java-Script#index.js" target="_blank"> <!--Link to project-->
+				<div class="work-content">Java Script</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevG0nML_DJkOMhQMk74Y1pvCXV5Obrt6QZg&usqp=CAU">
+				<a href="https://repl.it/@CodeWorld/Python#main.py" target="_blank"> <!--Link to project-->
+				<div class="work-content">Python</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="data:image/png;base64,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">
+				<a href="https://repl.it/@CodeWorld/Python#main.py" target="_blank"> <!--Link to project-->
+				<div class="work-content">HTML</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="https://www.import.io/wp-content/uploads/2012/04/java-logo-1.png">
+				<a href="https://repl.it/@CodeWorld/Java#Main.java" target="_blank"> <!--Link to project-->
+				<div class="work-content">Java</div></a>
+            </div> 
+			<div class="card">
+			    <img class="work-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAAB+CAMAAABGdeAYAAAAxlBMVEX///8lSZUpXagAAAAMDAwALonO2OUmSZfg4ODJ0d8mUZt1dXX///3k6vAcRJUaQ5La5OtkeKo8PDweWacqTJQASaIoWKLJ1ecAOI/V3egIOo66wNIANY4vUZicqcYYQJNlhLGEhITQ0NC1tbVdXV2goKAnJyeOjo719fXp6ekAKYd1iLCLmrsAT6OWlpZsbGxTU1IeHh5HR0cAG4NAX5qqvdCsudKFlb1TbKA7WJpvkbkyX6Jbg7eEn8JBaKgAIoUAQaBSd7OBPpIjAAAGT0lEQVR4nO2bDVPiOhSGW7FEsG2KRS4UbFBXLV+610UoK8ru//9Tm6RJ+kWxo+tNnJt3dhZjy8zT0+SctyfVMLS0tLS0tLS0tLS0tLS0/pYml6eJHu7x6OqBj07w6JTrRjZllU7OGkzf8eiaDxpXeHTMB6eyKauE6Y+pGt8MQn/MRgk9G6hNL2J/lfCy2N822OBBNmWVCP2/N9dYhNf4RoAblzf3ZN7TO9E4u76/lgxZKTLvb0/EcEJvxSMb3TX4JFJUlD7Dl8T7MhlE9FrOJnLQaqhIb1xSfDZXTujgce83VRCd96d3WCSpR5d3CX2DxPvm7p5mpMa9bMoq5XPOBH+mGfORjRTPmCLfT3L5/rv6+f6WF1Qyuye5WivKsLL53jjhmuRGER5Mcoe0/ops2QDyZEu+dq/5EcleBLMf1vv1I5RMH/bN98saSqZfjT5AP21Kpm99iN6TTD+YHuQDVaIHrUguvO1Ydei7Jfo2ORpITph2dJi+fVQlfBBeyIXHlRZ9gH4pvVBvDk6cano8892OZHbbWMJ3xb6HD6KZ7Hlvd9x30wdz2T7HmCEg5kk5Lx6ml20UDGMecHoIXRcWBHy/1/Op2Iff4/TdYCWZ3TbCgMEH82arrH+wsJlkH0RPPqEn+T6QbXOw0WH0IFjX+8IgoQcmMFufi1ZDQ5bwgRvX+0JKfzH4XLQaakE278Gm3hdS+o1sk4bpTU4P63muhJ6WWueT2WrAbAS9V+sRPaHHX4KxZIuJ5XB6E9VbhGnsay6Uz1S05MUWhU5B3r5l2eT00m0OSfgxNzrA7DJdEOFyNMstS2ILIu/nszBpM1nQGXUEPXtkoj+41ibMpxTM7qy2i4UwyGguiTirTslkAoDQclhckrbz8ur73Obg6+zLtznYppVMZmDOyAJOExAJ+3B7ztEZ/Ui+UcA2rQ+ycYdoNC9VISeMmTtjIjbHkm8USEcnpQcIxsQ45sIetcZo4R/lhEutuZNfrLDRSTs6aBq3itMdz/Zfv85T+XzRmjv5xQrnb97RAd1ZOZrRYOBl5YwpfhefPpUAW5Kz408nr1ENq7DlxQogFXr/EacHm7cnsm28CpuzUYDeNnbcZaK3/bpt9HipRQrYHMwzYiXWHNVJgSZP92imROw3LqOvUzwjwBNmXwWjgG0apw9wNAsyjMyPRM5ClFrZHYVEHd7K3DOTBTqfJM2FiL0KRoF0dIRF7pQ0Zlqz0tQS9IEKRoFsXXGrAEhDKiMIyRr1sbP0+W154vQAyO8oEK1yNi1vlXkn0N+yk19U6ocQDcW2IYABVdraFPRjdvK6J/ohKpg0PJXFBkQQDqlWF7zPIOhf2MmzxCgAJfohRE3ejzL7bCGmT+qcfsHT41jQK9APIRp0Bf1T8hs7LtKf8+vacoMMO2rQe2lHhxfbTomeLVHnt+jmyN44YXLE5o/oEsyK9IgF2nlVqqOAFYlIiw5NOGVpJ6H3fZfRD57Vo+exd8fczYTjDeojSu8v/OftT3YgaaTRLTc1bI5hjzl9diU6zTDeTa3+83rV9CLu0hKjQOgVsTnY6Aj6uJDDm8V2Wmpz+mrYHNuY83JVrJ82/ye0EvQj+VsPRLYRCvo3vcvLghUrc6RGurdTowPMg/R2hh6MFHgupGoJmwbD6EBIo0HI2t/E3qtCP0hNZh92wlI7jSpqvfx2k/Z3j06y/5qySl7m7S7gBnDTCZPVS5csCXHUGr8eifY32/ZRIva2HYmeSHIBwO1bm3DoJHi2txovFn62DYtPRypsnBDZRunNOnIBCN8Cz/DC7XMePekoBIoYBSy4/9EQ9qdwUex9q9UPIbG/qHqw3fuGS49sPShEX/2GUZG+1+7SriewZL9ImirzhtFB+nZb7CsGanQUqNEJwH78zFt1JOrJgqb/Q3Xow13FumX0vXYbCHD6A4JqdBSInPnShAgCs3gLCH0PTxcz+3sXmRed0nauVHmr2dIK3OIt6JKZLtjxinVH/Xg+dNT7iw9swjYQufmt88zlAIgCGD95SkWdiwbTWa2XKNiXQHHxxUGPxJlqynYGIZ5DKLOOSdBHy3AQKQ1upH/EM5zH3RGtAtjxmPE6eQRXm52LvokzWI0tC1nTOAn61yDPqTkffkFqqq8Ybi0tLS0tLS0tLS0trf+h/gBOEYrkpvA3PwAAAABJRU5ErkJggg==">
+				<a href="https://repl.it/@CodeWorld/CSS#style.css" target="_blank"> <!--Link to project-->
+				<div class="work-content">CSS</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="data:image/jpeg;base64,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">
+				<a href="https://repl.it/@CodeWorld/Swift#main.swift" target="_blank"> <!--Link to project-->
+				<div class="work-content">Swift</div></a>
+            </div> 	  
+		  </div>
+		  </div>
+	  </div>
+		 
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>Contact.<hr></h3>
+		   <p>Feel free to contact me on my social media.</p>
+		    <div class="social-media">
+			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+			  <a href="https://github.com/" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
+		  </div>
+
+	</main>
+	  <footer class="copyright">© 2020 
+		  <a href="https://repl.it/@lilykhan" target="_blank"> Lilykhan.</a>
+     </footer>
+	  
+  </div>
+  </body>
+</html>
